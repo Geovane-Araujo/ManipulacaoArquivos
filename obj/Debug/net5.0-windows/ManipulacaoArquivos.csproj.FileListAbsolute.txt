@@ -16,3 +16,13 @@ E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\obj\Debug\net5.0-window
 E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\obj\Debug\net5.0-windows\ref\ManipulacaoArquivos.dll
 E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\obj\Debug\net5.0-windows\ManipulacaoArquivos.pdb
 E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\obj\Debug\net5.0-windows\ManipulacaoArquivos.genruntimeconfig.cache
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\AtomFrameworkCs.dll
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\Npgsql.dll
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\obj\Debug\net5.0-windows\ManipulacaoArquivos.csproj.CopyComplete

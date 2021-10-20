@@ -14,7 +14,7 @@ namespace ManipulacaoArquivos.Controller
         {
 
         }
-        public ConverterWordToPdf(String entrada, String saida)
+        public ConverterWordToPdf(String entrada, String saida, String[] arquivos)
         {
             this.entrada = entrada;
             this.saida = saida;

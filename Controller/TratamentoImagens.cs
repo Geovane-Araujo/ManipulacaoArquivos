@@ -10,6 +10,7 @@ namespace ManipulacaoArquivos.Controller
     {
         string entrada = "";
         string saida = "";
+        string[] arquivos;
         public TratamentoImagens()
         {
 
@@ -19,5 +20,11 @@ namespace ManipulacaoArquivos.Controller
             this.entrada = entrada;
             this.saida = saida;
         }
+
+        public void ConverterImagens()
+        {
+
+        }
+
     }
 }

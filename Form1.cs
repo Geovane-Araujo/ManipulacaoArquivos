@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,14 +25,16 @@ namespace ManipulacaoArquivos
                 MessageBox.Show("Selecione os caminhos de Entrada e Saida dos Arquivos");
             else
             {
-
+                String[] arquivos = Directory.GetFiles(@""+txt_entrada.Text);
+ 
                 if (che_excel.Checked)
                 {
-                    ConverterExcelToPdf excel = new(txt_entrada.Text, txt_entrada.Text);
+                    ConverterExcelToPdf excel = new(txt_entrada.Text, txt_entrada.Text, arquivos);
+                    excel.Converter();
                 }
                 else if (che_word.Checked)
                 {
-                    ConverterWordToPdf word = new(txt_entrada.Text, txt_entrada.Text);
+                    ConverterWordToPdf word = new(txt_entrada.Text, txt_entrada.Text, arquivos);
                 }
                 else if (che_imagem.Checked)
                 {

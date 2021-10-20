@@ -40,11 +40,13 @@ namespace ManipulacaoArquivos
             this.che_word = new System.Windows.Forms.CheckBox();
             this.che_imagem = new System.Windows.Forms.CheckBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(427, 194);
+            this.button1.Location = new System.Drawing.Point(427, 222);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 23);
             this.button1.TabIndex = 0;
@@ -81,9 +83,7 @@ namespace ManipulacaoArquivos
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(506, 26);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(25, 24);
@@ -94,10 +94,8 @@ namespace ManipulacaoArquivos
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(506, 83);
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button3.Location = new System.Drawing.Point(506, 65);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(25, 24);
             this.button3.TabIndex = 6;
@@ -155,11 +153,30 @@ namespace ManipulacaoArquivos
             this.progressBar1.TabIndex = 10;
             this.progressBar1.Value = 7;
             // 
+            // progressBar2
+            // 
+            this.progressBar2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.progressBar2.Location = new System.Drawing.Point(13, 166);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(264, 22);
+            this.progressBar2.TabIndex = 11;
+            this.progressBar2.Value = 7;
+            // 
+            // progressBar3
+            // 
+            this.progressBar3.Location = new System.Drawing.Point(12, 222);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(264, 22);
+            this.progressBar3.TabIndex = 12;
+            this.progressBar3.Value = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 229);
+            this.ClientSize = new System.Drawing.Size(543, 251);
+            this.Controls.Add(this.progressBar3);
+            this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.che_imagem);
             this.Controls.Add(this.che_word);
@@ -193,6 +210,8 @@ namespace ManipulacaoArquivos
         private System.Windows.Forms.CheckBox che_word;
         private System.Windows.Forms.CheckBox che_imagem;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar progressBar3;
     }
 }
 
