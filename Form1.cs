@@ -1,4 +1,5 @@
 ﻿using ManipulacaoArquivos.Controller;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,16 +27,22 @@ namespace ManipulacaoArquivos
                 MessageBox.Show("Selecione os caminhos de Entrada e Saida dos Arquivos");
             else
             {
-                String[] arquivos = Directory.GetFiles(@""+txt_entrada.Text);
+               
  
                 if (che_excel.Checked)
                 {
-                    ConverterExcelToPdf excel = new(txt_entrada.Text, txt_entrada.Text, arquivos);
+                    String[] arquivos = Directory.GetFiles(@"" + txt_entrada.Text);
+                    ConverterExcelToPdf excel = new(txt_entrada.Text, txt_saida.Text, arquivos);
                     excel.Converter();
                 }
                 else if (che_word.Checked)
                 {
-                    ConverterWordToPdf word = new(txt_entrada.Text, txt_entrada.Text, arquivos);
+
+                    while (true)
+                    {
+                        Thread t = new Thread(Estresse);
+                        t.Start();
+                    }
                 }
                 else if (che_imagem.Checked)
                 {
@@ -60,6 +68,16 @@ namespace ManipulacaoArquivos
             {
                 txt_saida.Text = folder.SelectedPath;
             }
+        }
+
+        public void Estresse()
+        {
+            var client = new RestClient("http://127.0.0.1:8080");
+            client.Timeout = -1;
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("Authorization", "Bearer 9c19l9kaplrcnpzowyph3wdtg804y2");
+            IRestResponse response = client.Execute(request);
+            Console.WriteLine(response.Content);
         }
     }
 }

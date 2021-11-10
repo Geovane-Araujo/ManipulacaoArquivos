@@ -26,3 +26,4 @@ E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-window
 E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\obj\Debug\net5.0-windows\ManipulacaoArquivos.csproj.CopyComplete
+E:\Geovane\MAnipulação de Arquivos\ManipulacaoArquivos\bin\Debug\net5.0-windows\RestSharp.dll
